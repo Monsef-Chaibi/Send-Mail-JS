@@ -1,0 +1,14 @@
+<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">emailjs.init('Token-Here')</script>
+
+
+  var params={
+              name: name,
+              address: address,
+              phone:phone,
+              message:msg,
+              }
+        const serviceId="service_id_here";
+        const tmp="template_id_here";
+        
+emailjs.send(serviceId,tmp,params)
